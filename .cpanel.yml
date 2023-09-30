@@ -3,6 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/u1575278/public_html/testing/
     - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp .env.prod $DEPLOYPATH/.env
     - cd $DEPLOYPATH
     - /usr/local/bin/composer install --no-dev
